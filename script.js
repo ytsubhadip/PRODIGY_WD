@@ -22,7 +22,7 @@ async function checkWeather(city) {
         alert("City not found. Please enter a valid city name.");
     }
 }
-
+// function 
 searchBtn.addEventListener("click", () => {
     checkWeather(searchBox.value);
 });
