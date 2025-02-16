@@ -1,0 +1,122 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+body{
+    display: grid;
+    background: #222;
+    /* background-image: url(weather-app-img/images/grid\ img.jpg); */
+    background-position: center;
+    background-size: cover;
+    backdrop-filter:inherit;
+
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(375deg, #1cc7d0, #2ede98);
+    min-height: 450px;
+    min-width: 300px;
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+}
+.container .serch{
+    width: 100%;
+    display: flex;
+    margin: 10px 0px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.container .serch input{
+    background-color: white;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    height: 60px;
+    border-radius: 30px;
+    padding: 10px 25px;
+    flex: 1;
+}
+.container .serch button{
+    position: relative;
+    height: 35px;
+    border: none;
+    background-color: white;
+    outline: none;
+    font-size: 1.3rem;
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 60px;
+}
+.box1{
+    margin: 30px 0px; 
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.box1 img{
+   width: 40%;
+}
+.box1 .temp {
+    color: white;
+    font-size:3rem;
+}
+.box1 .city {
+    color: white;
+    font-size:1.5rem;
+}
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+}
+.box2 .humidity img{
+    width: 50px;  
+}
+.box2 .humidity h1{
+    font-size:35px;
+    font-weight: 400;
+}
+.box2 .humidity h2{
+    font-size: 20px;
+   font-weight: 300;
+}
+.box2 .windspeed img{
+    width: 50px;
+}
+.box2 .windspeed h1{
+    font-size:35px;
+    font-weight: 400;
+}
+.box2 .windspeed h2{
+    font-size: 20px;
+   font-weight: 300;
+}
+
+@media(max-width: 600px){
+    html{
+       
+    }
+    .container{
+        
+      
+        
+    }
+    .container .serch{
+       
+        gap: 4px;
+        
+    }
+}
